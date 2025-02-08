@@ -14,7 +14,7 @@ function test(states, visitedStates) {
     }
 
     // Detener el proceso si todos los estados posibles han sido visitados
-    if (visitedStates.size === 8) {
+    if (visitedStates.size === 8 || visitedStates.size==5) {
         document.getElementById("log").innerHTML += "<br>All states visited! System halted.";
         return;
     }
